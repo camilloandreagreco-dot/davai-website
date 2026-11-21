@@ -1553,6 +1553,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
 @media (min-width:1000px){.roi-top .head{width:100%;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end;column-gap:48px;row-gap:14px;max-width:none}.roi-top .head .kicker{grid-column:1/-1}.roi-top .head .lede{max-width:46ch}}
 .roi-in .calc{margin-top:clamp(24px,3vw,36px)}
 .calc-l{gap:14px}
+.one-tr span:not(.up):not(.dn){background:var(--bg2);color:var(--ink2);white-space:normal}
 </style>
 </head>
 <body>
@@ -1983,7 +1984,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
             <div class="b2-tags" id="b2Tags"><span class="on"><svg><use href="#i-cal"/></svg>Tue 15:00</span><span class="on"><svg><use href="#i-mail"/></svg>Follow-up</span><span class="on"><svg><use href="#i-clip"/></svg>Case study</span></div>
           </div>
         </div>
-        <div class="bt-cap"><span class="bt-n">02</span><h3>Talk.</h3><p>Davai listens to your side through your computer's mic and picks out every next step.</p></div>
+        <div class="bt-cap"><span class="bt-n">02</span><h3>Talk.</h3><p>Davai listens to your side through your device's mic and picks out every next step.</p></div>
       </article>
 
       <article class="beat" data-b="3">
@@ -2107,7 +2108,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
               </div>
               <div class="app-card cc-after cc-stop" data-stop="5">
                 <span class="cc-pin">5</span>
-                <div class="app-h"><span class="dv">✦</span>This call · ready when you hang up</div>
+                <div class="app-h"><span class="dv">✦</span>Ready when you press End call</div>
                 <div class="cc-this">
                   <div class="cc-act"><svg><use href="#i-mail"/></svg><span>Follow-up email<small>Case study linked from your library</small></span><em class="pl"><svg><use href="#i-play"/></svg></em></div>
                   <div class="cc-act"><svg><use href="#i-clock"/></svg><span>Call back Giulia<small>Thu 09:00 · in your tasks</small></span><em class="pl"><svg><use href="#i-play"/></svg></em></div>
@@ -2379,7 +2380,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
     <div class="mgr-r">
     <div class="one" id="one">
       <div class="one-h">
-        <div><small>1-2-1 · Week 39</small><b>Alex R.</b></div>
+        <div><small>Rep view · Dashboard</small><b>Alex R.</b></div>
         <span class="one-by"><span class="ag-logo"><svg aria-hidden="true"><use href="#i-spark"/></svg></span>Live from Davai</span>
       </div>
       <div class="one-sec">
@@ -2394,14 +2395,9 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
         <div><small>Best case</small><b>€<span data-n="85">85</span>k</b></div>
         <div><small>Closed won</small><b>€<span data-n="21">21</span>k</b></div>
       </div>
-      <div class="one-sec">
-        <span class="one-lbl">Missing to close</span>
-        <div class="one-deal"><b>Esempio Software</b><span>€12k</span><em>Security review</em></div>
-        <div class="one-deal"><b>Brezzalink</b><span>€8.5k</span><em>Budget owner</em></div>
-      </div>
       <div class="one-sec one-wow">
-        <span class="one-lbl">Week over week</span>
-        <div class="one-tr"><span class="up">Calls +18%</span><span class="up">Meetings +2</span><span class="dn">In-person −1</span></div>
+        <span class="one-lbl">Camps</span>
+        <div class="one-tr"><span>Milan heads of sales · 13 called</span><span>Calling Room Summit · 12 met</span></div>
       </div>
       <span class="one-stamp" id="oneStamp" aria-hidden="true">Ready · 08:59</span>
     </div>
@@ -2431,7 +2427,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
     <div class="band-h"><div class="head"><span class="kicker">Getting started</span><h2>Nothing to install. <em>Nothing to connect.</em></h2></div><p class="lede">Each rep signs in and starts calling the same day.</p></div>
     <div class="setup-row">
       <div><span class="si"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><b>Your phone</b><small>One click dials from your own phone.</small></div>
-      <div><span class="si" style="color:#0a66c2;background:#e8f1fb">in</span><b>LinkedIn</b><small>Opens the profile and a ready message.</small></div>
+      <div><span class="si" style="color:#0a66c2;background:#e8f1fb">in</span><b>LinkedIn</b><small>Opens LinkedIn with a ready message to paste.</small></div>
       <div><span class="si"><svg aria-hidden="true"><use href="#i-list"/></svg></span><b>Any list</b><small>A CSV, a paste or a CRM export.</small></div>
       <div><span class="si"><svg aria-hidden="true"><use href="#i-search"/></svg></span><b>Lusha, built in</b><small>Numbers and emails, on your own Lusha account.</small></div>
       <div><span class="si"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><b>Your mail app</b><small>Opens the email, written and ready.</small></div>
@@ -2481,7 +2477,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
       <details><summary>Does Davai make the calls?</summary><p>No. You do, from your own phone, in one click. People buy from people. Davai does everything around the call.</p></details>
       <details><summary>Can it send something I didn't approve?</summary><p>No. Every email and invite waits for you. Press play and it opens in your mail app, written and ready. Reshape it by voice or edit it by hand first if you like.</p></details>
       <details><summary>Will it make things up?</summary><p>It's built not to. Drafts use only what you said and the documents you gave it, never invented facts, prices or dates.</p></details>
-      <details><summary>Does it record my prospects?</summary><p>No. Davai listens through your computer's microphone when you press record, so it hears your side of the call. It is not connected to the phone line. After you hang up you can also leave a short voice note instead.</p></details>
+      <details><summary>Does it record my prospects?</summary><p>No. Press Record my phone call and Davai listens through your device's mic, so it hears your side of the call. It is not connected to the phone line. When you press End call, the next steps are ready as cards. You can also leave a short voice note instead.</p></details>
       <details><summary>Where do the phone numbers come from?</summary><p>Lusha, built in. Davai shows you the plan first and spends no credits until you say go. Names and titles are free.</p></details>
       <details><summary>How much time will we really save?</summary><p>It depends on your process. Our estimate for one call that books a meeting: about 16 minutes of switching and admin without Davai, under a minute with it. Try the calculator with your own numbers.</p></details>
       <details><summary>Is there anything to install?</summary><p>No. It runs in your browser. Your phone dials, your mail app sends, Lusha finds the numbers.</p></details>
