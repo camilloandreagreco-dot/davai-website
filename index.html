@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&text=CALSOFIBKTHU9!%20&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&text=%20%21%27.9ABCDFHIKLNOSTUabcdefghiklmnoprstuvwxy%E2%80%9C%E2%80%9D&display=swap">
 <style>
 /* Layout: a bright sales floor in daylight. Warm paper, black ink, one orange signal for "your voice / act now",
    and the product shown as clean app windows. The pain is a real, cluttered laptop desktop. */
@@ -56,7 +56,7 @@ img,svg{max-width:100%}
 .wrap{width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(16px,4vw,48px)}
 
 /* ---------- sections & type ---------- */
-.s{position:relative;padding-block:clamp(84px,11vw,150px)}
+.s{position:relative;padding-block:clamp(64px,7vw,100px)}
 .s-white{background:var(--white)}
 h1,h2,h3,h4{margin:0;font-weight:800;line-height:1.02;letter-spacing:-.03em;text-wrap:balance}
 p{margin:0}
@@ -921,8 +921,8 @@ textarea.gm-body{display:block;width:100%;border:0;resize:vertical;font:inherit;
 .lane.b .stat3 b{color:var(--hotInk)}
 
 /* ---------- MANIFESTO ---------- */
-.manifesto{background:var(--hot);color:var(--ink);padding-block:clamp(90px,12vw,170px);overflow:hidden}
-.manifesto p{font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(2.6rem,8.2vw,7.6rem);line-height:.86;letter-spacing:-.05em;text-wrap:balance}
+.manifesto{background:var(--hot);color:var(--ink);padding-block:clamp(64px,7.5vw,104px);overflow:hidden}
+.manifesto p{font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(2.4rem,6.4vw,5.8rem);line-height:.86;letter-spacing:-.05em;text-wrap:balance}
 .manifesto p em{font-family:var(--serif);font-weight:400;font-stretch:100%;text-transform:none;color:var(--white);letter-spacing:-.02em}
 .manifesto small{display:block;margin-top:30px;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
 
@@ -1111,11 +1111,12 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 @media (max-width:420px){.hub-map{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- LANGUAGES: one bold word ---------- */
-.langs-s{position:relative;background:var(--white);padding-block:clamp(84px,11vw,150px);overflow:hidden;border-block:1px solid var(--hair)}
-.lg-top{display:grid;justify-items:center;text-align:center;gap:18px}
-.lg-stage{position:relative;height:calc(min(15.5vw,13rem) * 1.02);margin-block:clamp(18px,3vw,34px);overflow:hidden}
+.langs-s{position:relative;background:var(--white);padding-block:clamp(56px,7vw,92px);overflow:hidden;border-block:1px solid var(--hair)}
+.lg-top{display:grid;justify-items:center;text-align:center;gap:12px}
+.lg-top h2{font-size:clamp(2rem,4vw,3.2rem)}
+.lg-stage{position:relative;height:calc(min(9vw,6.2rem) * 1.02);margin-block:clamp(10px,1.6vw,18px);overflow:hidden}
 .lg-w{position:absolute;inset:0;display:grid;place-items:center}
-.lg-in{grid-area:1/1;white-space:nowrap;font-weight:900;font-stretch:125%;text-transform:uppercase;font-size:min(15.5vw,13rem);line-height:1;letter-spacing:-.055em;color:var(--hot);transition:transform .6s var(--ease),opacity .45s}
+.lg-in{grid-area:1/1;white-space:nowrap;font-weight:900;font-stretch:125%;text-transform:uppercase;font-size:min(9vw,6.2rem);line-height:1;letter-spacing:-.05em;color:var(--hot);transition:transform .6s var(--ease),opacity .45s}
 .lg-in.out{transform:translateY(-70%);opacity:0}
 .lg-in.pre{transform:translateY(70%);opacity:0;transition:none}
 .lg-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px 28px}
@@ -1202,6 +1203,233 @@ footer .logo b{font-size:1.1rem}
   .feed-in,.hub-lines .l-e,.core-d,.dot-live{animation:none}
 }
 .nav-in{color:var(--ink2);text-decoration:none;font-size:.92rem;font-weight:600;white-space:nowrap}.nav-in:hover{color:var(--hotInk)}.nav .nav-in+.btn{margin-left:0}@media (max-width:960px){.nav .nav-in{margin-left:auto}}@media (max-width:360px){.nav .wrap{gap:16px}}
+
+/* ---------- HERO: founder line ---------- */
+.hero-by{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--mute);font-size:.9rem;line-height:1.4;max-width:48ch}
+.hero-by .mk2{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--white);display:grid;place-items:center;font-weight:800;font-size:.74rem}
+.hero-by b{color:var(--ink);font-weight:700}
+.hero-by u{text-decoration:none;color:var(--hotInk);font-weight:700;white-space:nowrap}
+.hero-by:hover u{text-decoration:underline}
+
+/* ---------- APP SCREENS: drawn in the app's own colours (teal = you act, violet on lavender = Davai) ---------- */
+.app{--teal:#0f766e;--teal2:#0d9488;--tealSoft:#e7f5f2;--tealLine:#a7d8cf;--vio:#7c3aed;--vioInk:#5b21b6;--lav:#f4f0ff;--aLine:#e4e7ec;--aMute:#667085;--aBg:#f6f7f9;
+  font-family:var(--os);color:#101828;background:var(--white);border:1px solid var(--aLine);border-radius:18px;box-shadow:var(--sh2);overflow:hidden;font-size:14px;line-height:1.4}
+.app-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid var(--aLine)}
+.app-bar h4{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;line-height:1.2;margin-right:4px}
+.app-pill{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;font-weight:600;padding:5px 10px;border-radius:999px;border:1px solid var(--aLine);white-space:nowrap}
+.app-pill.live{background:var(--tealSoft);border-color:var(--tealLine);color:var(--teal)}
+.app-pill svg{width:13px;height:13px}
+.app-who{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:.76rem;color:var(--aMute)}
+.app-who i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--tealSoft);color:var(--teal);display:grid;place-items:center;font-weight:700;font-size:.68rem}
+.app-who b{display:block;color:#101828;font-weight:600}
+.app-card{position:relative;background:var(--white);border:1px solid var(--aLine);border-radius:14px;padding:14px 16px;min-width:0}
+.app-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.92rem;margin-bottom:10px}
+.app-h svg{width:15px;height:15px;color:var(--teal)}
+.app-h .dv{color:var(--vio)}
+.app-h small{margin-left:auto;font-weight:500;color:var(--aMute);font-size:.74rem}
+.app-link{color:var(--teal);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+
+/* ---------- INSIDE A CALL CAMP ---------- */
+.camp-s{background:var(--white);border-block:1px solid var(--hair)}
+.cc-wrap{position:relative;margin-top:clamp(36px,5vw,60px)}
+.cc-body{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.55fr) minmax(0,.9fr);background:var(--aBg)}
+.cc-q{border-right:1px solid var(--aLine);background:var(--white);padding:12px;display:grid;gap:6px;align-content:start;min-width:0}
+.cc-q .qh{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;margin-bottom:4px}
+.cc-q .qh svg{width:15px;height:15px;color:var(--teal)}
+.cc-q .qa{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.8rem;padding:10px 4px 2px}
+.cc-q .qa i{font-style:normal;margin-left:auto;font-weight:500;color:var(--aMute)}
+.cc-q .qp{display:block;padding:8px 10px;border-radius:10px;border-left:2px solid var(--aLine);margin-left:6px;min-width:0}
+.cc-q .qp b{display:block;font-weight:600;font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cc-q .qp small{display:block;color:var(--aMute);font-size:.72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cc-q .qp.on{background:var(--tealSoft);border-left-color:var(--teal);box-shadow:inset 0 0 0 1px var(--tealLine)}
+.cc-q .qp .up{color:var(--teal);font-weight:600}
+.cc-q .qp .cb{color:#92400e;font-weight:600}
+.cc-mid{display:grid;gap:12px;padding:12px;align-content:start;min-width:0}
+.cc-right{display:grid;gap:12px;padding:12px 12px 12px 0;align-content:start;min-width:0}
+.cc-person h5{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:1.35rem;font-weight:700;letter-spacing:-.02em;margin:0;line-height:1.15}
+.cc-person h5 .li{width:20px;height:20px;border-radius:4px;background:#0a66c2;color:#fff;font-size:.62rem;font-weight:800;display:grid;place-items:center}
+.cc-person h5 .tg{font-size:.7rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--aBg);border:1px solid var(--aLine);color:var(--aMute);letter-spacing:0}
+.cc-person p{margin-top:4px;font-size:.88rem}
+.cc-person .cc-meta{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px;font-size:.76rem;color:var(--aMute)}
+.cc-person .cc-meta .good{color:#067647;font-weight:600}
+.cc-reach{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px}
+.cc-rows{display:grid;gap:8px;min-width:0}
+.cc-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0;font-size:.78rem;color:var(--aMute)}
+.cc-r .ic{flex:none;width:30px;height:30px;border-radius:9px;background:var(--tealSoft);color:var(--teal);display:grid;place-items:center}
+.cc-r .ic svg{width:14px;height:14px}
+.cc-num{display:inline-flex;align-items:center;gap:7px;border-radius:10px;padding:7px 12px;font-weight:700;font-size:.86rem;font-family:var(--os);white-space:nowrap;border:1.5px solid var(--teal);color:var(--teal);background:var(--white)}
+.cc-num.main{background:var(--teal);color:var(--white)}
+.cc-num svg{width:13px;height:13px}
+.cc-r b{color:#101828;font-weight:600}
+.cc-qr{display:grid;justify-items:center;gap:4px;padding-left:12px;border-left:1px solid var(--aLine);font-size:.66rem;color:var(--aMute);text-align:center}
+.cc-qr svg{width:78px;height:78px;border:1px solid var(--aLine);border-radius:8px;padding:4px;background:#fff}
+.cc-brief p{font-size:.84rem;line-height:1.5}
+.cc-brief p+p{margin-top:6px}
+.cc-brief .nw{font-size:.66rem;font-weight:700;letter-spacing:.08em;color:var(--aMute);margin-right:6px}
+.cc-brief .dt{color:var(--aMute);margin-right:4px}
+.cc-brief .sug{color:var(--vio);font-weight:700;margin-right:6px}
+.cc-brief .sugline{background:var(--lav);border-radius:10px;padding:8px 10px}
+.cc-map .mtop{display:flex;justify-content:center}
+.cc-map .mrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}
+.cc-n{display:grid;justify-items:center;text-align:center;gap:1px;padding:8px 6px;border:1px solid var(--aLine);border-radius:12px;background:var(--white);font-size:.72rem;min-width:0}
+.cc-n i{font-style:normal;width:28px;height:28px;border-radius:50%;background:#eef0f3;display:grid;place-items:center;font-weight:700;font-size:.64rem;margin-bottom:3px}
+.cc-n b{font-weight:600;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cc-n small{color:var(--aMute);font-size:.66rem;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cc-n.me{border-color:var(--teal);background:var(--tealSoft)}
+.cc-n.me i{background:var(--teal);color:#fff}
+.cc-n .shw{margin-top:4px;font-size:.62rem;font-weight:700;color:var(--teal);border:1px solid var(--tealLine);border-radius:999px;padding:2px 7px;white-space:nowrap}
+.cc-mfoot{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;font-size:.74rem;color:var(--aMute)}
+.cc-mfoot .cc-num{font-size:.74rem;padding:5px 10px}
+.cc-hist{display:grid;gap:0}
+.cc-he{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;padding:10px 0;border-top:1px solid var(--aLine);font-size:.78rem;line-height:1.4}
+.cc-he:first-of-type{border-top:0;padding-top:0}
+.cc-he .ic{width:28px;height:28px;border-radius:8px;background:var(--tealSoft);color:var(--teal);display:grid;place-items:center}
+.cc-he .ic svg{width:13px;height:13px}
+.cc-he small{display:block;color:var(--aMute)}
+.cc-he time{color:var(--aMute);font-size:.72rem;white-space:nowrap}
+.cc-tell{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:var(--lav);color:var(--vioInk);font-size:.76rem;font-weight:600}
+.cc-tell svg{width:14px;height:14px;flex:none}
+.cc-tell em{margin-left:auto;font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center}
+.cc-pin{position:absolute;z-index:3;top:-11px;left:-11px;width:26px;height:26px;border-radius:50%;background:var(--hot);color:var(--white);display:grid;place-items:center;font-family:var(--mono);font-weight:700;font-size:.76rem;box-shadow:0 0 0 3px var(--white),0 6px 14px -6px rgba(255,77,0,.8)}
+.cc-keys{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);margin-top:clamp(28px,4vw,44px)}
+.cc-key{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;align-content:start}
+.cc-key .cc-pin{position:static;grid-row:span 2;box-shadow:none}
+.cc-key b{font-weight:800;font-size:1.06rem;letter-spacing:-.01em;line-height:1.25}
+.cc-key p{color:var(--mute);font-size:.93rem;line-height:1.5}
+@media (max-width:1120px){.cc-body{grid-template-columns:minmax(0,.75fr) minmax(0,1.5fr)}.cc-right{grid-column:1/-1;padding:0 12px 12px;grid-template-columns:repeat(2,minmax(0,1fr))}.cc-keys{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.cc-body{grid-template-columns:minmax(0,1fr)}.cc-q{display:none}.cc-right{grid-template-columns:minmax(0,1fr)}.cc-reach{grid-template-columns:minmax(0,1fr)}.cc-qr{display:none}.cc-map .mrow{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-keys{grid-template-columns:minmax(0,1fr)}.app-who{display:none}}
+
+/* ---------- EVENTS: Radar + Capture ---------- */
+.ev-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(20px,3vw,40px);margin-top:clamp(36px,5vw,60px);align-items:start}
+.ev-col{display:grid;gap:18px;min-width:0}
+.ev-cap-t{display:grid;gap:6px;grid-template-columns:minmax(0,1fr)}
+.ev-cap-t h3{font-size:clamp(1.5rem,2.4vw,2rem)}
+.ev-cap-t p{color:var(--mute);max-width:54ch}
+.ev-scr{padding:16px;display:grid;gap:12px;background:var(--aBg)}
+.ev-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ev-top h4{font-size:1.15rem;font-weight:700;margin-right:auto}
+.ev-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:10px;border:1px solid var(--aLine);background:var(--white);font-size:.78rem;font-weight:600;white-space:nowrap}
+.ev-btn svg{width:13px;height:13px}
+.ev-btn .cnt{font-size:.66rem;font-weight:700;background:#fef3c7;color:#92400e;border-radius:999px;padding:1px 6px}
+.ev-ask{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid var(--aLine);background:var(--white);color:var(--aMute);font-size:.84rem;min-width:0}
+.ev-ask .sp{color:var(--vio);flex:none}
+.ev-ask .ev-tx{min-width:0;color:#101828;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev-ask .ev-tx .caret{background:var(--vio)}
+.ev-ask svg{width:15px;height:15px}
+.ev-ask .mic{margin-left:auto;flex:none;color:var(--teal)}
+.ev-chk{font-size:.74rem;color:var(--aMute)}
+.ev-chk u{text-underline-offset:2px}
+.ev-ev{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:14px;align-items:start;background:var(--white);border:1px solid var(--aLine);border-radius:14px;padding:12px 14px}
+.ev-ev.live{border-color:var(--tealLine);box-shadow:inset 0 0 0 1px var(--tealLine)}
+.ev-day{display:grid;justify-items:center;line-height:1.05;border:1px solid var(--tealLine);border-radius:10px;background:var(--tealSoft);padding:6px 0}
+.ev-day b{font-size:1.2rem;font-weight:800}
+.ev-day small{font-size:.6rem;font-weight:700;text-transform:uppercase}
+.ev-ev h5{font-size:.92rem;font-weight:700;margin:0;line-height:1.3}
+.ev-ev p{font-size:.76rem;color:var(--aMute);margin-top:2px}
+.ev-ev .why{color:#101828}
+.ev-ev .why b{color:var(--vio);font-weight:700}
+.ev-st{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:.72rem;color:var(--aMute);flex-wrap:wrap}
+.ev-st i{font-style:normal;font-weight:600;font-size:.68rem;color:#101828;padding:2px 8px;border-radius:999px;border:1px solid var(--aLine);background:var(--aBg)}
+.ev-st .g{color:#067647}
+.ev-st .a{color:#92400e}
+.ev-go{align-self:center;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;font-weight:700;font-size:.8rem;background:var(--teal);color:#fff;white-space:nowrap}
+.ev-go.o{background:var(--white);color:#101828;border:1px solid var(--aLine);font-weight:600}
+.ev-phone{justify-self:center;width:min(300px,100%);background:#0b0f16;border-radius:38px;padding:9px;box-shadow:var(--sh2)}
+.ev-phone .app{border-radius:30px;box-shadow:none;border:0}
+.ev-pscr{padding:16px 14px 14px;display:grid;gap:10px;background:var(--aBg)}
+.ev-ptop{display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700}
+.ev-ptop .lv{margin-left:auto;font-size:.62rem;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--tealSoft);color:var(--teal)}
+.ev-capb{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:14px;background:var(--teal);color:#fff;font-weight:700;font-size:.95rem}
+.ev-capb svg{width:17px;height:17px}
+.ev-lead{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center;background:var(--white);border:1px solid var(--aLine);border-radius:12px;padding:9px 10px}
+.ev-lead>i{font-style:normal;width:34px;height:34px;border-radius:10px;background:#eef0f3;display:grid;place-items:center;font-weight:700;font-size:.7rem}
+.ev-lead b{display:block;font-size:.8rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev-lead small{display:flex;align-items:center;gap:5px;font-size:.68rem;color:var(--aMute);white-space:nowrap;overflow:hidden}
+.ev-lead small svg{width:11px;height:11px;flex:none}
+.ev-lead .hot{color:#dc6803;font-size:.68rem;font-weight:700;display:inline-flex;align-items:center;gap:3px}
+.ev-lead .hot svg{width:13px;height:13px}
+.ev-ready{display:flex;align-items:center;gap:8px;font-size:.74rem;font-weight:600;color:var(--vioInk);background:var(--lav);border-radius:12px;padding:9px 11px}
+.ev-ready svg{width:13px;height:13px;flex:none}
+.ev-ready u{margin-left:auto;color:var(--teal);text-underline-offset:2px}
+.ev-camp{display:flex;align-items:center;gap:8px;font-size:.74rem;font-weight:600;padding:10px 11px;border-radius:12px;border:1px solid var(--tealLine);background:var(--tealSoft);color:var(--teal)}
+.ev-camp svg{width:14px;height:14px;flex:none}
+.ev-camp em{margin-left:auto;font-style:normal;font-weight:700}
+@media (max-width:960px){.ev-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.ev-ev{grid-template-columns:44px minmax(0,1fr)}.ev-ev .ev-go{grid-column:2;justify-self:start}}
+
+/* ---------- STICKY NOTES in Camillo's voice ---------- */
+.cg-note{position:relative;display:block;width:max-content;max-width:270px;padding:14px 16px 16px;background:#ffe45c;color:#1f2328;font-family:'Permanent Marker',var(--d);font-size:1.02rem;line-height:1.3;transform:rotate(-2deg);box-shadow:0 1px 1px rgba(0,0,0,.08),0 14px 24px -16px rgba(60,50,0,.55)}
+.cg-note small{display:block;margin-top:8px;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#7a6a10}
+.cg-note.r{transform:rotate(1.6deg)}
+
+/* ---------- THE STORY ---------- */
+.story-s{background:var(--ink);color:var(--white);overflow:hidden;padding-block:clamp(72px,9vw,120px)}
+.story-s .kicker{color:var(--hot2)}
+.story-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px);align-items:start}
+.story-s h2{color:var(--white)}
+.story-s h2 em{color:var(--hot2)}
+.story-t{display:grid;gap:18px;font-size:clamp(1.05rem,1.35vw,1.18rem);line-height:1.65;color:#d6d9df;max-width:60ch}
+.story-t b{color:var(--white);font-weight:700}
+.story-sig{display:flex;align-items:center;gap:14px;margin-top:6px}
+.story-sig .mk2{flex:none;width:48px;height:48px;border-radius:50%;background:var(--hot);color:var(--white);display:grid;place-items:center;font-weight:900}
+.story-sig b{display:block;color:var(--white);font-size:1rem}
+.story-sig small{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#9aa1ad}
+.story-l{display:grid;gap:26px;align-content:start}
+.story-l .cg-note{font-size:1.15rem}
+@media (max-width:900px){.story-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Call Camp extras: stops, labels, notes ---------- */
+.cc-this{display:grid;gap:8px}
+.cc-act{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;border:1px solid var(--aLine);font-size:.8rem;font-weight:600;min-width:0}
+.cc-act>svg{width:15px;height:15px;flex:none;color:var(--vio)}
+.cc-act .pl{margin-left:auto;flex:none;width:26px;height:26px;border-radius:50%;background:var(--teal);color:var(--white);display:grid;place-items:center}
+.cc-act .pl svg{width:11px;height:11px;margin-left:1px}
+.ev-col>*,.ev-cap-t>*{min-width:0}
+.cc-stop{transition:box-shadow .35s var(--ease),opacity .35s}
+.cc-wrap.tour .cc-stop{opacity:.55}
+.cc-wrap.tour .cc-stop.on{opacity:1;box-shadow:0 0 0 2px var(--hot),0 18px 36px -24px rgba(255,77,0,.6)}
+.cc-wrap.tour .cc-q.cc-stop.on{box-shadow:inset 0 0 0 2px var(--hot)}
+.cc-act span{min-width:0}
+.cc-act small{display:block;font-weight:500;color:var(--aMute);font-size:.7rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cc-act.done{background:var(--tealSoft);border-color:var(--tealLine)}
+.cc-act.done svg{color:var(--teal)}
+.cc-label{margin-top:12px;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute2)}
+.cc-label.c{text-align:center}
+.cc-note1{position:absolute;z-index:4;left:-14px;bottom:-34px;transform:rotate(-3deg)}
+.cc-note2{position:absolute;z-index:4;right:-10px;top:-46px}
+.cc-keys{list-style:none;padding:0;grid-template-columns:repeat(5,minmax(0,1fr))}
+.cc-key{cursor:pointer;border-radius:14px;padding:10px;margin:-10px;transition:background .3s}
+.cc-key.on{background:var(--hotSoft)}
+.camp-s .kit-h{margin-top:clamp(56px,7vw,88px)}
+.ev-note{margin-top:14px}
+@media (max-width:1120px){.cc-keys{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-note2{top:-40px;right:0}}
+@media (max-width:760px){.cc-note1,.cc-note2{position:static;margin-top:16px;transform:rotate(-1.5deg)}.cc-wrap{display:grid}.cc-q{display:grid}.cc-q span.qp:nth-of-type(n+3),.cc-q .qa:nth-of-type(3){display:none}.cc-keys{grid-template-columns:minmax(0,1fr)}.app-bar .app-pill:not(.live){display:none}}
+
+/* ---------- compact bands: setup + won't do ---------- */
+.band{padding-block:clamp(56px,7vw,88px)}
+.band-h{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 32px;margin-bottom:28px}
+.band-h h2{font-size:clamp(2rem,4vw,3.2rem)}
+.setup-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.setup-row div{display:grid;gap:6px;align-content:start;background:var(--white);border:1px solid var(--hair);border-radius:16px;padding:16px;min-width:0}
+.setup-row .si{width:36px;height:36px;border-radius:10px;background:var(--hotSoft);color:var(--hotInk);display:grid;place-items:center;font-weight:800;font-size:.8rem}
+.setup-row .si svg{width:17px;height:17px}
+.setup-row b{font-weight:800;font-size:1rem;letter-spacing:-.01em}
+.setup-row small{color:var(--mute);font-size:.84rem;line-height:1.4}
+@media (max-width:1000px){.setup-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.setup-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.wont{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:clamp(56px,7vw,88px)}
+.wont div{border:1.5px solid var(--ink);border-radius:16px;padding:16px 18px;background:var(--white);display:grid;gap:6px;align-content:start}
+.wont b{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;display:flex;gap:8px;align-items:center}
+.wont b svg{width:16px;height:16px;color:var(--bad);flex:none}
+.wont small{color:var(--mute);font-size:.88rem;line-height:1.45}
+@media (max-width:1000px){.wont{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.wont{grid-template-columns:minmax(0,1fr)}}
+.roi-in{margin-top:clamp(56px,7vw,88px)}
+.h-sm{font-size:clamp(2rem,4vw,3.2rem)}
+.mgr-r{display:grid;gap:20px;min-width:0}
+.mgr-r .mgr-camp{max-width:none}
+.mgr-camp{max-width:420px}
+
 </style>
 </head>
 <body>
@@ -1228,6 +1456,9 @@ footer .logo b{font-size:1.1rem}
     <symbol id="i-redo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></g></symbol>
     <symbol id="i-edit" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 20h8M16.5 3.6a2.1 2.1 0 0 1 3 3L7.2 18.9 3 20l1.1-4.2z"/></symbol>
     <symbol id="i-bell" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 8.5a6 6 0 0 0-12 0c0 6.5-2.5 8.5-2.5 8.5h17S18 15 18 8.5M13.7 20.5a2 2 0 0 1-3.4 0"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c1 3.2-.6 5-2 6.6C8.6 10.2 7 12 7 14.6A5 5 0 0 0 12 20a5 5 0 0 0 5-5.2c0-2.3-1.2-3.9-2.2-5-.2 1.6-1 2.6-2 3 .7-3.6-.3-7.6-.8-10.8z"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
     <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 21l1.4-4.6A8.5 8.5 0 1 1 20.5 12z"/></symbol>
   </defs>
 </svg>
@@ -1238,12 +1469,13 @@ footer .logo b{font-size:1.1rem}
     <div class="nav-links">
       <a href="#tax">The tab tax</a>
       <a href="#how">How it works</a>
-      <a href="#call">Take a call</a>
-      <a href="#roi">ROI</a>
+      <a href="#camp">Call Camp</a>
+      <a href="#events">Events</a>
+      <a href="#managers">For managers</a>
       <a href="#faq">FAQ</a>
     </div>
     <a class="nav-in" href="https://davai.trustpavilion.com/">Sign in</a>
-    <a class="btn btn-hot btn-sm" href="#start">Start free trial</a>
+    <a class="btn btn-hot btn-sm" href="#start">Get early access</a>
   </div>
 </nav>
 
@@ -1252,20 +1484,21 @@ footer .logo b{font-size:1.1rem}
 <header class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow"><i></i><b>The AI agent for outbound calling</b><span class="eb-x">· Free trial open</span></span>
+      <span class="eyebrow"><i></i><b>The AI agent for reps who call</b><span class="eb-x">· Early access open</span></span>
       <h1>It's <em>phone</em> time.</h1>
       <p class="hero-value">You talk. <span>Davai does everything else.</span></p>
       <ul class="hero-no" aria-label="What you stop doing">
         <li>No tabs</li><li>No typing</li><li>No logging</li>
       </ul>
       <div class="cta-row">
-        <a class="btn btn-hot" href="#start">Start free trial</a>
+        <a class="btn btn-hot" href="#start">Get early access</a>
         <a class="btn btn-line" href="#call">Take a call<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
+      <a class="hero-by" href="#story"><span class="mk2" aria-hidden="true">CG</span><span><b>Built by a sales rep who still makes the calls.</b> <u>Read why</u></span></a>
     </div>
 
     <div class="say-wrap">
-      <p class="sr">An example call with Davai. You call Giulia R., Head of Sales at a Milan software company, with one click. You say: so Tuesday at three works for you? Then: perfect, I'll email you the Milan case study. When you hang up, Davai has everything ready in 1.4 seconds: a calendar invite for Tuesday at 15:00, and a follow-up email written in Italian with a link to the case study. The call is logged automatically. You say "make it shorter", then press play and the invite and the email open ready to send.</p>
+      <p class="sr">An example call with Davai. You call Giulia R., Head of Sales at a Milan software company, with one click. You say: so Tuesday at three works for you? Then: perfect, I'll email you the Milan case study. When you hang up, Davai has everything ready: a calendar invite for Tuesday at 15:00, and a follow-up email written in Italian with a link to the case study. The call is logged automatically. You say "make it shorter", then press play and the invite and the email open ready to send.</p>
       <div class="say" id="say" aria-hidden="true">
         <div class="say-call">
           <span class="say-av" id="sayAv">GR</span>
@@ -1280,7 +1513,7 @@ footer .logo b{font-size:1.1rem}
           </div>
         </div>
         <div class="say-agent">
-          <div class="say-ah"><span class="ag-logo"><svg><use href="#i-spark"/></svg></span><b>Davai</b><span class="say-st done" id="saySt">Ready in 1.4 s</span></div>
+          <div class="say-ah"><span class="ag-logo"><svg><use href="#i-spark"/></svg></span><b>Davai</b><span class="say-st done" id="saySt">Ready when you hang up</span></div>
           <div class="acts" id="sayActs">
             <div class="act" data-k="inv" data-ph="Ready when you hang up">
               <span class="act-ic"><svg><use href="#i-cal"/></svg></span>
@@ -1320,8 +1553,8 @@ footer .logo b{font-size:1.1rem}
         <div class="pb-t"><b>12 tools <span>→</span> 1</b><small>No jumping between tabs. The whole call in one place.</small></div>
       </div>
       <div class="pb" id="pbFive">
-        <div class="pb-vis" aria-hidden="true"><div class="five" id="pbFiveB"><i style="--h:20%;--n:0"></i><i style="--h:40%;--n:1"></i><i style="--h:60%;--n:2"></i><i style="--h:80%;--n:3"></i><i style="--h:100%;--n:4"></i></div></div>
-        <div class="pb-t"><b>0 <span>fields typed</span></b><small>Davai logs the call when you hang up. You check it, it saves.</small></div>
+        <div class="pb-vis" aria-hidden="true"><span class="pb-cg">CG</span></div>
+        <div class="pb-t"><b>Built by a rep <span>·</span> <a href="#story">read why</a></b><small>Ten years on the phone, still dialling.</small></div>
       </div>
     </div>
   </div>
@@ -1546,7 +1779,7 @@ footer .logo b{font-size:1.1rem}
                     <div class="qrow"><span class="dt"></span><span class="nm">Anna M.</span><span class="st">To do</span></div>
                   </div>
                   <div class="dav-a">
-                    <div class="ag-h"><span class="ag-logo"><svg><use href="#i-spark"/></svg></span><b>Davai</b><span class="ag-state done">Done in 1.4 s</span></div>
+                    <div class="ag-h"><span class="ag-logo"><svg><use href="#i-spark"/></svg></span><b>Davai</b><span class="ag-state done">Done when you hang up</span></div>
                     <div class="dv on" data-k="3"><svg><use href="#i-check"/></svg><span>Queue built, mobile found with Lusha</span></div>
                     <div class="dv on" data-k="5"><svg><use href="#i-check"/></svg><span>Brief read for you, one click dialled</span></div>
                     <div class="dv on" data-k="7"><svg><use href="#i-check"/></svg><span>Notes from your voice, call logged</span></div>
@@ -1562,6 +1795,24 @@ footer .logo b{font-size:1.1rem}
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY DAVAI EXISTS ================= -->
+<section class="story-s" id="story">
+  <div class="wrap story-grid">
+    <div class="story-l">
+      <div class="head">
+        <span class="kicker">Why Davai exists</span>
+        <h2>I built it because <em>I needed it.</em></h2>
+      </div>
+      <span class="cg-note">This was my desk.<small>Camillo</small></span>
+    </div>
+    <div class="story-t">
+      <p>I'm Camillo. I sell for a living, and I still do. For ten years I have made outbound calls across EMEA. <b>The calling was never the hard part.</b> The hard part was everything around it: finding the number, checking who I was about to speak to, writing it up, sending what I promised, remembering to call back on Thursday.</p>
+      <p>So I started building the tool I wanted on my own desk. I still make the calls. <b>When Davai gets in my way, that gets fixed first.</b></p>
+      <div class="story-sig"><span class="mk2">CG</span><span><b>Camillo Greco</b><small>Founder · still on the phone</small></span></div>
     </div>
   </div>
 </section>
@@ -1608,7 +1859,7 @@ footer .logo b{font-size:1.1rem}
             <div class="b2-tags" id="b2Tags"><span class="on"><svg><use href="#i-cal"/></svg>Tue 15:00</span><span class="on"><svg><use href="#i-mail"/></svg>Follow-up</span><span class="on"><svg><use href="#i-clip"/></svg>Case study</span></div>
           </div>
         </div>
-        <div class="bt-cap"><span class="bt-n">02</span><h3>Talk.</h3><p>It transcribes your side and picks out every next step.</p></div>
+        <div class="bt-cap"><span class="bt-n">02</span><h3>Talk.</h3><p>Davai listens to your side through your computer's mic and picks out every next step.</p></div>
       </article>
 
       <article class="beat" data-b="3">
@@ -1627,9 +1878,123 @@ footer .logo b{font-size:1.1rem}
           </div>
           <span class="b-cur" id="b3Cur"><svg viewBox="0 0 24 24"><path d="M4.5 2.5l15 8.6-6.6 1.7-3.4 6.2z"/></svg></span>
         </div>
-        <div class="bt-cap"><span class="bt-n">03</span><h3>Press play.</h3><p>Play it as it is. Reshape it by voice. Or edit it by hand.</p></div>
+        <div class="bt-cap"><span class="bt-n">03</span><h3>Press play.</h3><p>Your email opens, written and ready. Reshape it by voice, or edit it by hand.</p></div>
       </article>
     </div>
+
+  </div>
+</section>
+
+<!-- ================= INSIDE A CALL CAMP ================= -->
+<section class="s camp-s" id="camp">
+  <div class="wrap">
+    <div class="head c">
+      <span class="kicker">Inside a Call Camp</span>
+      <h2>One screen. <em>The whole call.</em></h2>
+      <p class="lede">A Call Camp is where you work your list. Everything you used to open twelve tabs for is already on the screen, in the order you need it.</p>
+    </div>
+
+    <p class="sr">An example Call Camp screen with made-up people. On the left, the queue: who's next, grouped by company. In the middle: Giulia R., Head of Sales at Esempio Software, with how to reach her (her mobile number is the button that dials, plus office, email, LinkedIn and a meeting invite), the Davai brief with a dated news item, its source and a suggested opener, and the account map: who else matters at Esempio Software. Names and titles cost nothing; you pay credits only for the numbers you show. On the right: the history with Giulia, and after the call, Davai's cards: the follow-up email with the case study linked from your library, the call-back on Thursday at 9:00, and the call logged.</p>
+    <div class="cc-wrap" id="ccWrap" aria-hidden="true">
+      <div class="app cc-app">
+        <div class="app-bar">
+          <h4>Milan sales leaders</h4>
+          <span class="app-pill live">Live · 37 to call</span>
+          <span class="app-pill"><svg><use href="#i-clock"/></svg>41m today</span>
+          <span class="app-pill">Queue · 40</span>
+          <span class="app-who"><i>AR</i><span><b>Alex R.</b>Sales rep</span></span>
+        </div>
+        <div class="cc-body">
+          <div class="cc-q cc-stop" data-stop="1">
+            <span class="cc-pin">1</span>
+            <div class="qh"><svg><use href="#i-list"/></svg>Queue</div>
+            <div class="qa">Esempio Software <i>3</i></div>
+            <span class="qp on"><b>Giulia R.</b><small>Head of Sales</small></span>
+            <span class="qp"><b>Marco B.</b><small class="up">Up next</small></span>
+            <span class="qp"><b>Davide P.</b><small>Called 4 Nov</small></span>
+            <div class="qa">Nord Cloud <i>2</i></div>
+            <span class="qp"><b>Sofia R.</b><small class="cb">Call back Thu 09:00</small></span>
+            <span class="qp"><b>Luca F.</b><small>Sales director</small></span>
+          </div>
+
+          <div class="cc-mid">
+            <div class="app-card cc-person">
+              <h5>Giulia R. <span class="li">in</span><span class="tg">Tried once</span></h5>
+              <p>Esempio Software (made up) · Head of Sales</p>
+              <div class="cc-meta"><span>Milan, Italy</span><span>10:30 their time · <span class="good">good time</span></span><span>Last spoke 3 Nov</span></div>
+            </div>
+
+            <div class="app-card cc-stop" data-stop="2">
+              <span class="cc-pin">2</span>
+              <div class="app-h"><svg><use href="#i-phone"/></svg>How to reach Giulia<small>Do not call</small></div>
+              <div class="cc-reach">
+                <div class="cc-rows">
+                  <div class="cc-r"><span class="ic"><svg><use href="#i-phone"/></svg></span><span class="cc-num main"><svg><use href="#i-phone"/></svg>+39 3** *** *417</span><b>Mobile</b> · not tried yet</div>
+                  <div class="cc-r"><span class="ic"><svg><use href="#i-phone"/></svg></span><span class="cc-num"><svg><use href="#i-phone"/></svg>+39 02 **** *321</span><b>Office</b> · no answer 7 Nov</div>
+                  <div class="cc-r"><span class="ic"><svg><use href="#i-mic"/></svg></span><span class="cc-num"><svg><use href="#i-mic"/></svg>Record my phone call</span></div>
+                  <div class="cc-r"><span class="ic"><svg><use href="#i-mail"/></svg></span><span class="app-link">giulia.r***@esempiosoftware.it</span></div>
+                  <div class="cc-r"><span class="ic"><svg><use href="#i-chat"/></svg></span><span class="app-link">Message on LinkedIn</span><span class="app-link">Send a meeting invite</span></div>
+                </div>
+                <div class="cc-qr"><svg viewBox="0 0 21 21" aria-hidden="true" shape-rendering="crispEdges"><path fill="#101828" d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM8 0h1v1h-1zM9 0h1v1h-1zM10 0h1v1h-1zM11 0h1v1h-1zM12 0h1v1h-1zM14 0h1v1h-1zM15 0h1v1h-1zM16 0h1v1h-1zM17 0h1v1h-1zM18 0h1v1h-1zM19 0h1v1h-1zM20 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM10 1h1v1h-1zM12 1h1v1h-1zM14 1h1v1h-1zM20 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM9 2h1v1h-1zM10 2h1v1h-1zM12 2h1v1h-1zM14 2h1v1h-1zM16 2h1v1h-1zM17 2h1v1h-1zM18 2h1v1h-1zM20 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM12 3h1v1h-1zM14 3h1v1h-1zM16 3h1v1h-1zM17 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM10 4h1v1h-1zM11 4h1v1h-1zM12 4h1v1h-1zM14 4h1v1h-1zM16 4h1v1h-1zM17 4h1v1h-1zM18 4h1v1h-1zM20 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM10 5h1v1h-1zM14 5h1v1h-1zM20 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM11 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM15 6h1v1h-1zM16 6h1v1h-1zM17 6h1v1h-1zM18 6h1v1h-1zM19 6h1v1h-1zM20 6h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM0 8h1v1h-1zM1 8h1v1h-1zM8 8h1v1h-1zM10 8h1v1h-1zM11 8h1v1h-1zM12 8h1v1h-1zM13 8h1v1h-1zM14 8h1v1h-1zM17 8h1v1h-1zM0 9h1v1h-1zM1 9h1v1h-1zM2 9h1v1h-1zM3 9h1v1h-1zM4 9h1v1h-1zM11 9h1v1h-1zM17 9h1v1h-1zM19 9h1v1h-1zM1 10h1v1h-1zM2 10h1v1h-1zM5 10h1v1h-1zM6 10h1v1h-1zM7 10h1v1h-1zM10 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM1 11h1v1h-1zM4 11h1v1h-1zM5 11h1v1h-1zM6 11h1v1h-1zM7 11h1v1h-1zM9 11h1v1h-1zM10 11h1v1h-1zM11 11h1v1h-1zM13 11h1v1h-1zM17 11h1v1h-1zM1 12h1v1h-1zM2 12h1v1h-1zM3 12h1v1h-1zM4 12h1v1h-1zM6 12h1v1h-1zM10 12h1v1h-1zM14 12h1v1h-1zM16 12h1v1h-1zM17 12h1v1h-1zM14 13h1v1h-1zM18 13h1v1h-1zM19 13h1v1h-1zM20 13h1v1h-1zM0 14h1v1h-1zM1 14h1v1h-1zM2 14h1v1h-1zM3 14h1v1h-1zM4 14h1v1h-1zM5 14h1v1h-1zM6 14h1v1h-1zM9 14h1v1h-1zM12 14h1v1h-1zM14 14h1v1h-1zM18 14h1v1h-1zM19 14h1v1h-1zM0 15h1v1h-1zM6 15h1v1h-1zM8 15h1v1h-1zM11 15h1v1h-1zM15 15h1v1h-1zM16 15h1v1h-1zM17 15h1v1h-1zM19 15h1v1h-1zM20 15h1v1h-1zM0 16h1v1h-1zM2 16h1v1h-1zM3 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM9 16h1v1h-1zM11 16h1v1h-1zM12 16h1v1h-1zM16 16h1v1h-1zM18 16h1v1h-1zM0 17h1v1h-1zM2 17h1v1h-1zM3 17h1v1h-1zM4 17h1v1h-1zM6 17h1v1h-1zM8 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM11 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM16 17h1v1h-1zM17 17h1v1h-1zM18 17h1v1h-1zM19 17h1v1h-1zM20 17h1v1h-1zM0 18h1v1h-1zM2 18h1v1h-1zM3 18h1v1h-1zM4 18h1v1h-1zM6 18h1v1h-1zM10 18h1v1h-1zM14 18h1v1h-1zM18 18h1v1h-1zM19 18h1v1h-1zM20 18h1v1h-1zM0 19h1v1h-1zM6 19h1v1h-1zM9 19h1v1h-1zM10 19h1v1h-1zM11 19h1v1h-1zM13 19h1v1h-1zM14 19h1v1h-1zM15 19h1v1h-1zM19 19h1v1h-1zM0 20h1v1h-1zM1 20h1v1h-1zM2 20h1v1h-1zM3 20h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM8 20h1v1h-1zM9 20h1v1h-1zM10 20h1v1h-1zM11 20h1v1h-1zM12 20h1v1h-1zM13 20h1v1h-1zM14 20h1v1h-1zM15 20h1v1h-1z"/></svg><span>Scan to call<br>from your mobile</span></div>
+              </div>
+            </div>
+
+            <div class="app-card cc-brief cc-stop" data-stop="3">
+              <span class="cc-pin">3</span>
+              <div class="app-h"><span class="dv">✦</span>Davai brief<small>Updated today</small></div>
+              <p><span class="nw">NEWS</span><span class="dt">14 Nov</span>Esempio Software opens a London office and is hiring its first UK sales team · <span class="app-link">milanotech.example ↗</span></p>
+              <p>Sells subscription billing software to mid-size retailers in Italy and Spain.</p>
+              <p class="sugline"><span class="sug">✦ Davai suggests</span>Congratulations on London. Who is building the sales team there?</p>
+            </div>
+
+            <div class="app-card cc-map cc-stop" data-stop="4">
+              <span class="cc-pin">4</span>
+              <div class="app-h"><svg><use href="#i-map"/></svg>Who else is at Esempio Software<small>16 people · 3 in this camp</small></div>
+              <div class="mtop"><span class="cc-n"><i>CL</i><b>Chiara L.</b><small>Chief Revenue Officer</small><span class="shw">Show number · 5</span></span></div>
+              <div class="mrow">
+                <span class="cc-n me"><i>GR</i><b>Giulia R.</b><small>Head of Sales</small></span>
+                <span class="cc-n"><i>MB</i><b>Marco B.</b><small>Head of RevOps</small><span class="shw">Show number · 5</span></span>
+                <span class="cc-n"><i>DP</i><b>Davide P.</b><small>Sales Ops Lead</small><span class="shw">Show number · 5</span></span>
+                <span class="cc-n"><i>EV</i><b>Elena V.</b><small>VP Partnerships</small><span class="shw">Show number · 5</span></span>
+              </div>
+              <div class="cc-mfoot"><span class="cc-num"><svg><use href="#i-phone"/></svg>Show all 12 numbers · up to 55 credits</span>Names and titles: 0 credits</div>
+            </div>
+          </div>
+
+          <div class="cc-right">
+            <div class="app-card">
+              <div class="app-h"><svg><use href="#i-clock"/></svg>History</div>
+              <div class="cc-hist">
+                <div class="cc-he"><span class="ic"><svg><use href="#i-phone"/></svg></span><span>You called the office<small>No answer</small></span><time>7 Nov</time></div>
+                <div class="cc-he"><span class="ic"><svg><use href="#i-mail"/></svg></span><span>Email opened in your mail app<small>“Pricing for 2027”</small></span><time>5 Nov</time></div>
+                <div class="cc-he"><span class="ic"><svg><use href="#i-phone"/></svg></span><span>You called · spoke 6 min<small>Call back after their London launch</small></span><time>3 Nov</time></div>
+              </div>
+            </div>
+            <div class="app-card cc-after cc-stop" data-stop="5">
+              <span class="cc-pin">5</span>
+              <div class="app-h"><span class="dv">✦</span>This call · ready when you hang up</div>
+              <div class="cc-this">
+                <div class="cc-act"><svg><use href="#i-mail"/></svg><span>Follow-up email<small>Case study · Milan, linked from your library</small></span><em class="pl"><svg><use href="#i-play"/></svg></em></div>
+                <div class="cc-act"><svg><use href="#i-clock"/></svg><span>Call back Giulia<small>Thu 09:00 · in your tasks</small></span><em class="pl"><svg><use href="#i-play"/></svg></em></div>
+                <div class="cc-act done"><svg><use href="#i-check"/></svg><span>Logged: meeting booked<small>Tue 15:00 · you can change it</small></span></div>
+              </div>
+            </div>
+            <div class="cc-tell"><svg><use href="#i-mic"/></svg>Tell Davai what happened…<em><svg><use href="#i-mic"/></svg></em></div>
+          </div>
+        </div>
+      </div>
+      <p class="cc-label">Example screen. Made-up people.</p>
+      <span class="cg-note cc-note1">Deciding who to call next used to eat my first hour.<small>Camillo</small></span>
+      <span class="cg-note r cc-note2">“Not my budget” isn't a no. It's directions.<small>Camillo</small></span>
+    </div>
+
+    <ol class="cc-keys" id="ccKeys">
+      <li class="cc-key" data-stop="1"><span class="cc-pin">1</span><b>Who's next.</b><p>Your list, in order. No picking, no spreadsheet.</p></li>
+      <li class="cc-key" data-stop="2"><span class="cc-pin">2</span><b>How to reach them.</b><p>The number is the button. One click dials from your own phone.</p></li>
+      <li class="cc-key" data-stop="3"><span class="cc-pin">3</span><b>Company brief.</b><p>Who they are and what happened there lately. Dated news, the source one click away.</p></li>
+      <li class="cc-key" data-stop="4"><span class="cc-pin">4</span><b>Account map.</b><p>Wrong person? See who else matters. Names and titles are free. Pay only for the numbers you show.</p></li>
+      <li class="cc-key" data-stop="5"><span class="cc-pin">5</span><b>After the call.</b><p>The follow-up, the call-back and the log wait as cards. Press play on the ones you want.</p></li>
+    </ol>
 
     <div class="kit-h"><span class="kicker">Built in. No extra tabs.</span></div>
     <div class="kit" id="kit">
@@ -1649,22 +2014,6 @@ footer .logo b{font-size:1.1rem}
         <p>Say who you want. No credits spent until you say go.</p>
       </article>
 
-      <article class="tile s1 s2 s3" data-t="map">
-        <div class="tl-vis" aria-hidden="true">
-          <div class="amap">
-            <span class="am-n am-top"><i>CL</i><span>CRO</span></span>
-            <svg class="am-l" viewBox="0 0 300 40" preserveAspectRatio="none"><path d="M150 0V16M50 16H250M50 16V40M150 16V40M250 16V40"/></svg>
-            <div class="am-row">
-              <span class="am-n am-me"><i>GR</i><span>Sales</span><u>Not my budget</u></span>
-              <span class="am-n am-hit"><i>MB</i><span>RevOps</span><b class="am-rev">Show number</b><b class="am-ph">+39 *** *147</b></span>
-              <span class="am-n"><i>DP</i><span>Sales Ops</span></span>
-            </div>
-            <span class="am-free">Names and titles free</span>
-          </div>
-        </div>
-        <h3>Wrong person? <em>Found.</em></h3>
-        <p>See who else matters. Pay only for the numbers you show.</p>
-      </article>
 
       <article class="tile s1 s2 s3" data-t="cb">
         <div class="tl-vis" aria-hidden="true">
@@ -1692,36 +2041,53 @@ footer .logo b{font-size:1.1rem}
         <p>Every call, email and meeting on one timeline.</p>
       </article>
 
-      <article class="tile s1 s2 s3" data-t="doc">
-        <div class="tl-vis" aria-hidden="true">
-          <div class="docs">
-            <span class="df df1"><i class="ai" style="--c:#c43e1c">P</i><span>Case_Study_Milan_final_v7_FINAL.pptx</span></span>
-            <span class="df df2"><i class="ai" style="--c:#185abd">W</i><span>Case study Milan (1) (2).docx</span></span>
-            <span class="df df3"><i class="ai" style="--c:#ff4d00">D</i><span>Case study · Milan</span><small>Your library</small></span>
-            <div class="dmail"><svg><use href="#i-mail"/></svg><span>Follow-up to Giulia</span><span class="dslot"><svg><use href="#i-clip"/></svg><span class="ds-e">Link</span><span class="ds-f">Case study · Milan</span></span></div>
-          </div>
-        </div>
-        <h3>The right <em>document.</em></h3>
-        <p>Your case studies and decks, linked from your library. One click opens them.</p>
-      </article>
 
-      <article class="tile s1 s2 s3" data-t="camp">
-        <div class="tl-vis" aria-hidden="true">
-          <div class="camp">
-            <div class="cp-h"><b>Q4 push · Milan</b><span class="cp-live">Live · 4 reps</span></div>
-            <ol class="cp-rows">
-              <li class="an"><span>Anna</span><i><u></u></i><b>64</b></li>
-              <li class="me"><span>You</span><i><u></u></i><b>59</b></li>
-              <li class="lu"><span>Luca</span><i><u></u></i><b>54</b></li>
-              <li class="sa"><span>Sara</span><i><u></u></i><b>37</b></li>
-            </ol>
-            <div class="cp-tgt"><span>Team target</span><i><u></u></i><b>214 / 250</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+<section class="s" id="events">
+  <div class="wrap">
+    <div class="head c">
+      <span class="kicker">Events · New</span>
+      <h2>The best leads aren't on a list. <em>They're at the booth.</em></h2>
+      <p class="lede"><b>Radar</b> finds the events your buyers go to. <b>Capture</b> brings home the people you meet. <b>The event's own Call Camp</b> turns them into meetings.</p>
+    </div>
+
+    <p class="sr">An example Events screen with made-up events. You tell Davai in one sentence what events you go to. Davai checks every week and shows a list with dates, deadlines and which of your accounts will be there. On the day, a phone screen shows the event live and a button, Capture a lead: a photo of the badge, a voice note and a hot mark. Every person you capture goes into the event's own Call Camp, with the follow-up message ready.</p>
+    <div class="ev-grid" aria-hidden="true">
+      <div class="ev-col">
+        <div class="app">
+          <div class="ev-scr">
+            <div class="ev-top"><h4>Events</h4><span class="ev-btn"><svg><use href="#i-cal"/></svg>Deadlines <span class="cnt">2</span></span><span class="ev-btn"><svg><use href="#i-phone"/></svg>Capture</span></div>
+            <div class="ev-ask"><span class="sp">✦</span><span class="ev-tx" id="evAsk">SaaS sales and RevOps events in Italy and the UK, where heads of sales go</span><svg class="mic"><use href="#i-mic"/></svg></div>
+            <div class="ev-chk">Checked Mon 16 Nov · 2 new · 1 deadline moved · <u>Look again</u></div>
+            <div class="ev-ev live"><span class="ev-day"><b>4</b><small>Dec</small></span><div><h5>SaaS Sales Summit (made up)</h5><p>4 Dec · Milan, Italy · €90</p><p class="why"><b>✦</b> Esempio Software speaking (your account)</p><span class="ev-st"><i>Going</i><span class="g">you confirmed 12 Nov</span></span></div><span class="ev-go o">Add to calendar</span></div>
+            <div class="ev-ev"><span class="ev-day"><b>22</b><small>Jan</small></span><div><h5>RevOps Forum (made up)</h5><p>22 Jan · London, UK · No fee</p><p class="why"><b>✦</b> Nord Cloud hosting a roundtable (your account)</p><span class="ev-st"><i>Want to go</i><span class="a">Apply by Fri 5 Dec</span></span></div><span class="ev-go">Open the form</span></div>
+            <div class="ev-ev"><span class="ev-day"><b>10</b><small>Feb</small></span><div><h5>Outbound Leaders Dinner (made up)</h5><p>10 Feb · Turin, Italy · No fee</p><p class="why"><b>✦</b> For heads of sales · invite only</p><span class="ev-st"><i>New</i></span></div><span class="ev-go o">Ask for an invite</span></div>
           </div>
         </div>
-        <h3>Call <em>Camps.</em></h3>
-        <p>One live queue for the team, with targets and rankings.</p>
-      </article>
+        <div class="ev-cap-t"><h3>Radar</h3><p>Tell it in one sentence what events you go to. Davai looks every week, keeps the dates and deadlines in one list, and tells you which of your accounts will be in the room.</p></div>
+      </div>
+
+      <div class="ev-col">
+        <div class="ev-phone">
+          <div class="app">
+            <div class="ev-pscr">
+              <div class="ev-ptop">SaaS Sales Summit<span class="lv">Live today</span></div>
+              <div class="ev-capb"><svg><use href="#i-plus"/></svg>Capture a lead</div>
+              <div class="ev-lead new" id="evLead"><i>NK</i><span><b>Nina K. · Head of Sales</b><small><svg><use href="#i-cam"/></svg>Badge photo · <svg><use href="#i-mic"/></svg>voice note</small></span><span class="hot"><svg><use href="#i-flame"/></svg>Hot</span></div>
+              <div class="ev-lead"><i>PD</i><span><b>Paolo D. · Sales Director</b><small><svg><use href="#i-mic"/></svg>“Wants pricing in January”</small></span></div>
+              <div class="ev-ready"><span>✦</span>Message to Nina ready<u>Open</u></div>
+              <div class="ev-camp"><svg><use href="#i-list"/></svg>Call Camp · SaaS Sales Summit<em id="evN">12 people</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="ev-cap-t"><h3>Capture</h3><p>At the booth, one press: the badge, a voice note, a flame for the hot ones. Everyone you meet lands in the event's own Call Camp, with the follow-up ready.</p><span class="cg-note r ev-note">I've come home from trade shows with a pocket of cards and good intentions.<small>Camillo</small></span></div>
+      </div>
     </div>
+    <p class="cc-label c">Example screens. Made-up people and events.</p>
   </div>
 </section>
 
@@ -1789,23 +2155,11 @@ footer .logo b{font-size:1.1rem}
       </div>
       <p class="fine">An illustration of one working day. Rep A didn't work less hard. Rep A worked the tooling.</p>
     </div>
-  </div>
-</section>
-
-<div class="manifesto">
-  <div class="wrap">
-    <p>If you're not on the phone, <em>you're not selling.</em></p>
-    <small>Davai · The AI agent for outbound calling</small>
-  </div>
-</div>
-
-<!-- ================= ROI + GUARANTEE ================= -->
-<section class="s" id="roi">
-  <div class="wrap">
+    <div class="roi-in" id="roi">
     <div class="roi-top">
       <div class="head">
-        <span class="kicker">ROI calculator</span>
-        <h2>Your team. <em>Your numbers.</em></h2>
+        <span class="kicker">Now with your numbers</span>
+        <h2 class="h-sm">Your team. <em>Your numbers.</em></h2>
         <p class="lede">Move the sliders to match your team today. <b>Then pick how much more calling time Davai gives back.</b></p>
       </div>
     </div>
@@ -1853,8 +2207,17 @@ footer .logo b{font-size:1.1rem}
         <p class="fine">An estimate for illustration: 21 working days a month, 8-hour days, about one minute between calls with Davai, and meetings and customers grow in line with activity. Your results depend on your market and your team.</p>
       </div>
     </form>
+</div>
   </div>
 </section>
+
+
+<div class="manifesto">
+  <div class="wrap">
+    <p>If you're not on the phone, <em>you're not selling.</em></p>
+    <small>Davai · The AI agent for reps who call</small>
+  </div>
+</div>
 
 <!-- ================= MANAGERS ================= -->
 <section class="s s-white" id="managers">
@@ -1869,8 +2232,10 @@ footer .logo b{font-size:1.1rem}
         <div class="box-h"><span><i class="dot-live"></i>Team activity · live</span><span>Example</span></div>
         <div class="feed"><div class="feed-in" id="feedIn"></div></div>
       </div>
+
     </div>
 
+    <div class="mgr-r">
     <div class="one" id="one">
       <div class="one-h">
         <div><small>1-2-1 · Week 39</small><b>Alex R.</b></div>
@@ -1899,46 +2264,38 @@ footer .logo b{font-size:1.1rem}
       </div>
       <span class="one-stamp" id="oneStamp" aria-hidden="true">Ready · 08:59</span>
     </div>
+      <article class="tile s1 s2 s3 mgr-camp" data-t="camp">
+        <div class="tl-vis" aria-hidden="true">
+          <div class="camp">
+            <div class="cp-h"><b>Q4 push · Milan</b><span class="cp-live">Live · 4 reps</span></div>
+            <ol class="cp-rows">
+              <li class="an"><span>Anna</span><i><u></u></i><b>64</b></li>
+              <li class="me"><span>You</span><i><u></u></i><b>59</b></li>
+              <li class="lu"><span>Luca</span><i><u></u></i><b>54</b></li>
+              <li class="sa"><span>Sara</span><i><u></u></i><b>37</b></li>
+            </ol>
+            <div class="cp-tgt"><span>Team target</span><i><u></u></i><b>214 / 250</b></div>
+          </div>
+        </div>
+        <h3>Call <em>Camps.</em></h3>
+        <p>One live queue for the team, with targets and rankings. You see who needs a hand.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <!-- ================= SETUP ================= -->
-<section class="s" id="setup">
+<section class="band" id="setup">
   <div class="wrap">
-    <div class="head c">
-      <span class="kicker">Getting started</span>
-      <h2>Connect nothing. <em>Start today.</em></h2>
+    <div class="band-h"><div class="head"><span class="kicker">Getting started</span><h2>Nothing to install. <em>Nothing to connect.</em></h2></div><p class="lede">Each rep signs in and starts calling the same day.</p></div>
+    <div class="setup-row">
+      <div><span class="si"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><b>Your phone</b><small>One click dials from your own phone.</small></div>
+      <div><span class="si" style="color:#0a66c2;background:#e8f1fb">in</span><b>LinkedIn</b><small>Opens the profile and a ready message.</small></div>
+      <div><span class="si"><svg aria-hidden="true"><use href="#i-list"/></svg></span><b>Any list</b><small>A CSV, a paste or a CRM export.</small></div>
+      <div><span class="si"><svg aria-hidden="true"><use href="#i-search"/></svg></span><b>Lusha, built in</b><small>Numbers and emails, on your own Lusha account.</small></div>
+      <div><span class="si"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><b>Your mail app</b><small>Opens the email, written and ready.</small></div>
+      <div><span class="si"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><b>Your calendar</b><small>Invites as calendar files.</small></div>
     </div>
-
-    <div class="hub" id="hub" data-mode="n">
-      <div class="hub-sw" role="group" aria-label="Show the setup">
-        <button type="button" id="hubN" aria-pressed="true">Nothing</button>
-        <button type="button" class="sw" id="hubSw" aria-label="Switch between connect nothing and connect everything"><i></i></button>
-        <button type="button" id="hubE" aria-pressed="false">Coming next</button>
-      </div>
-
-      <div class="hub-map" id="hubMap">
-        <svg class="hub-lines" id="hubLines" aria-hidden="true"></svg>
-        <div class="hub-col hub-a">
-          <span class="node" data-g="link"><span class="nd-ic"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span class="nd-t"><b>Your phone</b><small>One click dials</small></span></span>
-          <span class="node" data-g="link"><span class="nd-ic"><i class="ai" style="--c:#0a66c2">in</i></span><span class="nd-t"><b>LinkedIn</b><small>Opens the profile</small></span></span>
-          <span class="node" data-g="on"><span class="nd-ic"><svg aria-hidden="true"><use href="#i-list"/></svg></span><span class="nd-t"><b>Any list</b><small>CSV, paste, CRM export</small></span></span>
-          <span class="node" data-g="on"><span class="nd-ic"><svg aria-hidden="true"><use href="#i-search"/></svg></span><span class="nd-t"><b>Lusha</b><small>Built in for numbers</small></span></span>
-        </div>
-        <div class="hub-core"><span class="core-d" aria-hidden="true">D</span><b>Davai</b><small id="hubCoreS">Nothing connected</small></div>
-        <div class="hub-col hub-b">
-          <span class="node" data-g="swap"><span class="nd-ic"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><span class="nd-t"><b><span class="v-n">Your mail app</span><span class="v-e">Your mailbox</span></b><small><span class="v-n">Opens a ready email</span><span class="v-e">Outlook, then Gmail · coming next</span></small></span></span>
-          <span class="node" data-g="swap"><span class="nd-ic"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><span class="nd-t"><b><span class="v-n">Calendar files</span><span class="v-e">Your calendar</span></b><small><span class="v-n">Invites as .ics files</span><span class="v-e">Books it for you · coming next</span></small></span></span>
-          <span class="node" data-g="e"><span class="nd-ic"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><span class="nd-t"><b>Your AI assistant</b><small><span class="v-n">Not connected</span><span class="v-e">Your own assistant · coming next</span></small></span></span>
-        </div>
-      </div>
-
-      <div class="hub-cap">
-        <p class="v-n"><b>Nothing.</b> No IT, no passwords. Start calling today.</p>
-        <p class="v-e"><b>Coming next.</b> Your own mailbox, your calendar and your own AI assistant, connected one rep at a time. Not switched on yet.</p>
-      </div>
-    </div>
-    <p class="fall">Today it runs on your phone, your mail app and Lusha. Nothing to install or integrate.</p>
   </div>
 </section>
 
@@ -1954,32 +2311,43 @@ footer .logo b{font-size:1.1rem}
   <div class="wrap">
     <div class="lg-row">
       <div class="lg-pills" id="lgPills" role="group" aria-label="Pick a language">
-        <button type="button" data-i="0" aria-pressed="true">EN</button><button type="button" data-i="1" aria-pressed="false">FR</button><button type="button" data-i="2" aria-pressed="false">ES</button><button type="button" data-i="3" aria-pressed="false">IT</button><button type="button" data-i="4" aria-pressed="false">DE</button>
+        <button type="button" data-i="0" aria-pressed="true">EN</button><button type="button" data-i="1" aria-pressed="false">FR</button><button type="button" data-i="2" aria-pressed="false">DE</button><button type="button" data-i="3" aria-pressed="false">ES</button><button type="button" data-i="4" aria-pressed="false">IT</button>
       </div>
       <div class="lg-mail">
         <span class="lg-l"><svg aria-hidden="true"><use href="#i-mail"/></svg>Follow-up to Giulia · <b id="lgName">English</b></span>
         <p id="lgText">Hi Giulia, the invite for Tuesday at 15:00 is in your inbox. Case study below.</p>
       </div>
     </div>
-    <p class="lg-note">Davai is Russian for “let’s go”. Your follow-up goes out in your prospect’s language.</p>
+    <p class="lg-note">It’s what you say before you pick up the phone. Your follow-up goes out in your prospect’s language.</p>
   </div>
 </section>
 
 <!-- ================= FAQ ================= -->
 <section class="s faq-s" id="faq">
+  <div class="wrap">
+    <div class="wont" aria-label="What Davai won't do">
+      <div><b><svg aria-hidden="true"><use href="#i-ban"/></svg>It won't call for you.</b><small>You make every call, from your own phone. People buy from people.</small></div>
+      <div><b><svg aria-hidden="true"><use href="#i-ban"/></svg>It won't send without you.</b><small>Every email and invite waits for your press.</small></div>
+      <div><b><svg aria-hidden="true"><use href="#i-ban"/></svg>It isn't a CRM.</b><small>It's where the calling happens. Keep your CRM.</small></div>
+      <div><b><svg aria-hidden="true"><use href="#i-ban"/></svg>No parallel dialling.</b><small>One rep, one call. Nobody picks up to silence.</small></div>
+    </div>
+  </div>
   <div class="wrap faq-grid">
     <div class="head"><span class="kicker">FAQ</span><h2>Objections? <em>Handled.</em></h2></div>
     <div class="faq">
       <details><summary>Is Davai a CRM?</summary><p>No. It's where the calling happens, on top of your CRM. Bring lists from any CRM export, a CSV or a plain paste.</p></details>
-      <details><summary>Do I have to drop Sales Navigator, Apollo or ZoomInfo?</summary><p>No. Keep them and import their exports. On a calling day Davai finds the people and the numbers inside Davai, with Lusha built in, so those tabs can stay closed.</p></details>
+      <details><summary>Do I have to drop Sales Navigator, Apollo or ZoomInfo?</summary><p>No. Keep them and import their exports. On a calling day Davai finds the people and the numbers for you, with Lusha built in, so those tabs can stay closed.</p></details>
       <details><summary>Does Davai make the calls?</summary><p>No. You do, from your own phone, in one click. People buy from people. Davai does everything around the call.</p></details>
-      <details><summary>Can it send something I didn't approve?</summary><p>No. Every email and invite waits for you. Press play to send it, reshape it by voice, or edit it by hand.</p></details>
+      <details><summary>Can it send something I didn't approve?</summary><p>No. Every email and invite waits for you. Press play and it opens in your mail app, written and ready. Reshape it by voice or edit it by hand first if you like.</p></details>
       <details><summary>Will it make things up?</summary><p>It's built not to. Drafts use only what you said and the documents you gave it, never invented facts, prices or dates.</p></details>
-      <details><summary>Does it record my prospects?</summary><p>Davai is built to transcribe your side of the call, not the prospect's. You can also just say what happened after you hang up.</p></details>
+      <details><summary>Does it record my prospects?</summary><p>No. Davai listens through your computer's microphone when you press record, so it hears your side of the call. It is not connected to the phone line. You can also just tell Davai what happened after you hang up.</p></details>
       <details><summary>Where do the phone numbers come from?</summary><p>Lusha, built in. Davai shows you the plan first and spends no credits until you say go. Names and titles are free.</p></details>
       <details><summary>How much time will we really save?</summary><p>It depends on your process. Our estimate for one call that books a meeting: about 16 minutes of switching and admin without Davai, under a minute with it. Try the calculator with your own numbers.</p></details>
-      <details><summary>Do I need IT to start?</summary><p>No. Connect nothing and start calling the same day. Connect a mailbox and calendar later if you want to.</p></details>
-      <details><summary>How much does it cost?</summary><p>Pricing on request. Free trial and early access are open now. Write to <a href="mailto:sales@trustpavilion.com">sales@trustpavilion.com</a>.</p></details>
+      <details><summary>Is there anything to install?</summary><p>No. It runs in your browser. Your phone dials, your mail app sends, Lusha finds the numbers.</p></details>
+      <details><summary>Does it work at events?</summary><p>Yes. Radar finds the events your buyers go to, Capture brings home the people you meet, and each event gets its own Call Camp for the follow-up.</p></details>
+      <details><summary>Who is behind Davai?</summary><p>Camillo Greco, a sales rep who still makes the calls. He built Davai for his own calling days, and you deal with him directly.</p></details>
+      <details><summary>Is it live?</summary><p>Yes, in early access. Request it below and the founder answers you himself.</p></details>
+      <details><summary>How much does it cost?</summary><p>Pricing on request. Early access is open now. Write to <a href="mailto:sales@trustpavilion.com">sales@trustpavilion.com</a>.</p></details>
     </div>
   </div>
 </section>
@@ -2002,10 +2370,10 @@ footer .logo b{font-size:1.1rem}
         </div>
         <div class="tx-pipe"><span>Your pipeline</span><div class="tx-bars"><i style="--h:18%;--n:0"></i><i style="--h:26%;--n:1"></i><i style="--h:37%;--n:2"></i><i style="--h:52%;--n:3"></i><i style="--h:71%;--n:4"></i><i style="--h:100%;--n:5"></i></div></div>
       </div>
-      <span class="kicker">Free trial · Early access</span>
+      <span class="kicker">Early access</span>
       <h2>Close the tabs. <em>Open the pipeline.</em></h2>
-      <p class="lede">Free trial and early access are open now. Pricing on request.</p>
-      <div class="founder"><span class="mk">CG</span><div><p>Ten years of phone-first outbound across EMEA. I still make the calls. Every feature started as a problem I hit on a real calling day.</p><cite>Camillo Greco · Founder, Davai by TrustPavilion</cite></div></div>
+      <p class="lede">Early access is open now, and you deal with the founder directly. Pricing on request.</p>
+      <div class="founder"><span class="mk">CG</span><div><p>I still make the calls. If Davai gets in your way, tell me.</p><cite>Camillo Greco · Founder, Dav.ai by TrustPavilion</cite></div></div>
     </div>
     <form class="reg" id="regForm" novalidate>
       <h3>Get Davai on your team</h3>
@@ -2019,14 +2387,14 @@ footer .logo b{font-size:1.1rem}
       </div>
       <fieldset class="fld" style="border:0;padding:0;margin:0"><legend>I want</legend>
         <div class="seg2" style="margin-top:6px">
-          <label><input type="radio" name="kind" id="k-trial" value="Free trial" checked><span>Free trial</span></label>
-          <label><input type="radio" name="kind" id="k-early" value="Early access"><span>Early access</span></label>
+          <label><input type="radio" name="kind" id="k-early" value="Early access" checked><span>Early access</span></label>
           <label><input type="radio" name="kind" id="k-demo" value="A demo"><span>A demo</span></label>
+          <label><input type="radio" name="kind" id="k-q" value="A question"><span>A question</span></label>
         </div>
       </fieldset>
       <div class="fld"><label for="f-note">Anything else (optional)</label><textarea id="f-note" name="note" placeholder="Markets you call, team setup, the tools you use today..."></textarea></div>
-      <button class="btn btn-hot" type="submit">Get started</button>
-      <div id="formMsg" class="formmsg" role="status">We reply within one working day.</div>
+      <button class="btn btn-hot" type="submit">Open my email, ready to send</button>
+      <div id="formMsg" class="formmsg" role="status">Your email app opens with your request written. Nothing is sent until you send it. Camillo replies within one working day.</div>
     </form>
   </div>
 </section>
@@ -2163,7 +2531,7 @@ function Cursor(cur,box){
     var ms=$$('mark',lines);
     for(var i=0;i<ms.length;i++){fly(ms[i]);await S.hold(300)}
     await S.hold(750);
-    log.classList.remove('off');setSt('Ready in 1.4 s','done');await S.hold(1400);
+    log.classList.remove('off');setSt('Ready when you hang up','done');await S.hold(1400);
     stepTo(2);shape.classList.remove('off');await S.hold(800);
     prev.classList.add('swap');await S.hold(260);prev.textContent=SHORT;prev.classList.remove('swap','long');await S.hold(1000);
     var r=say.getBoundingClientRect();cur.show(r.width*.62,r.height-6);await S.hold(60);
@@ -2178,9 +2546,9 @@ function Cursor(cur,box){
 /* ---------- proof band: 16 minutes shrink, 12 tools fold into one, bars grow ---------- */
 (function(){
   var pb=$('#pband');if(!pb||RM)return;
-  var arc=$('#pbArc'),n=$('#pbClk'),t12=$('#pbT12'),five=$('#pbFiveB'),done=false;
+  var arc=$('#pbArc'),n=$('#pbClk'),t12=$('#pbT12'),five=null,done=false;
   pb.classList.add('still');
-  arc.style.strokeDasharray='100 100';arc.classList.add('over');n.textContent='16:00';t12.classList.add('spread');five.classList.add('low');
+  arc.style.strokeDasharray='100 100';arc.classList.add('over');n.textContent='16:00';t12.classList.add('spread');if(five)five.classList.add('low');
   void pb.offsetWidth;pb.classList.remove('still');
   onView(pb,function(v){if(!v||done)return;done=true;
     setTimeout(function(){
@@ -2189,7 +2557,7 @@ function Cursor(cur,box){
         n.textContent=mmss(s);arc.style.strokeDasharray=(s/960*100).toFixed(2)+' 100';
         if(p<1)requestAnimationFrame(f);else{arc.classList.remove('over');arc.style.strokeDasharray=''}});
       setTimeout(function(){t12.classList.remove('spread')},900);
-      setTimeout(function(){five.classList.remove('low')},1300);
+      setTimeout(function(){if(five)five.classList.remove('low')},1300);
     },400);
   },0.4);
 })();
@@ -2359,7 +2727,7 @@ function Cursor(cur,box){
 (function(){
   var kit=$('#kit');if(!kit||RM)return;
   var tiles=$$('.tile',kit),S=Scene(kit,0.15),want=null,cur=null,idx=-1;
-  var ORDER=['ask','map','cb','log','doc','camp'],MAX={ask:4,map:3,cb:3,log:4,doc:3,camp:3};
+  var ORDER=['ask','cb','log','map','doc','camp'].filter(function(k){return T(k)}),MAX={ask:4,map:3,cb:3,log:4,doc:3,camp:3};
   var ASK='50 heads of sales in Milan. Mobiles.',N0=[52,41,46,29],N1=[64,53,54,37],N2=[64,59,54,37];
   function T(k){return $('.tile[data-t="'+k+'"]',kit)}
   function cls(t,n){for(var i=1;i<=5;i++)t.classList.toggle('s'+i,i<=n)}
@@ -2387,7 +2755,7 @@ function Cursor(cur,box){
   async function run(){
     S.focus=null;await S.hold(1);
     var k=want;want=null;
-    while(!k){for(var j=1;j<=6;j++){var c=ORDER[(idx+j+6)%6];if(seen(T(c))){k=c;break}}if(!k)await S.hold(200)}
+    while(!k){for(var j=1;j<=ORDER.length;j++){var c=ORDER[(idx+j+ORDER.length)%ORDER.length];if(seen(T(c))){k=c;break}}if(!k)await S.hold(200)}
     idx=ORDER.indexOf(k);cur=T(k);S.focus=cur;await S.hold(1);
     tiles.forEach(function(x){if(x!==cur)fin(x)});
     cur.classList.add('lit');
@@ -2637,7 +3005,7 @@ function Cursor(cur,box){
     var hasPlay=d.acts.some(function(a){return a[0]==='invite'||a[0]==='email'});
     body.scrollTop=0;
     body.innerHTML=(chips?'<div class="ga-card"><span class="ga-lbl"><span>Next steps it picked out</span></span><div class="caught">'+chips+'</div></div>':'')+
-      '<div class="ga-ready" id="gaReady"><span>Ready in 1.4 s</span><span>'+(hasPlay?'Press play to send':'Nothing to send')+'</span></div>';
+      '<div class="ga-ready" id="gaReady"><span>Ready when you hang up</span><span>'+(hasPlay?'Press play on what you want':'Nothing to send')+'</span></div>';
     d.acts.forEach(function(a,i){var el=card(a,d);el.style.animationDelay=(i*.18)+'s';body.appendChild(el)});
     body.insertAdjacentHTML('beforeend','<div class="glog">'+ic('i-check')+'Call logged automatically</div>');
     setState(hasPlay?'Ready':'Done','done');
@@ -2780,9 +3148,9 @@ function Cursor(cur,box){
   var pills=$$('#lgPills button'),name=$('#lgName'),text=$('#lgText');
   var L=[["Let's go",'English','Hi Giulia, the invite for Tuesday at 15:00 is in your inbox. Case study below.'],
     ['Allez','Français',"Bonjour Giulia, l'invitation pour mardi à 15h00 est dans votre boîte. Étude de cas ci-dessous."],
+    ['Los geht’s','Deutsch','Hallo Giulia, die Einladung für Dienstag, 15:00, ist in Ihrem Posteingang. Fallstudie unten.'],
     ['Vamos','Español','Hola Giulia: la invitación para el martes a las 15:00 ya está en tu bandeja. Caso de estudio abajo.'],
-    ['Dai','Italiano',"Ciao Giulia, l'invito per martedì alle 15:00 è nella tua casella. Case study qui sotto."],
-    ['Los geht’s','Deutsch','Hallo Giulia, die Einladung für Dienstag, 15:00, ist in Ihrem Posteingang. Fallstudie unten.']];
+    ['Dai','Italiano',"Ciao Giulia, l'invito per martedì alle 15:00 è nella tua casella. Case study qui sotto."]];
   var i=0,auto=!RM,T=0;
   function show(n){if(n===i)return;i=n;
     pills.forEach(function(p,k){p.setAttribute('aria-pressed',String(k===n))});name.textContent=L[n][1];
@@ -2816,10 +3184,33 @@ function Cursor(cur,box){
     var kind=form.querySelector('input[name="kind"]:checked').value;
     var text='Name: '+name+'\nEmail: '+email+'\nCompany: '+company+'\nReps on the phone: '+form.size.value+'\nI want: '+kind+(form.note.value.trim()?'\n\n'+form.note.value.trim():'');
     msg.className='formmsg ok';
-    msg.innerHTML='<div><b>Thanks, '+esc(name)+'.</b> Your request is ready. Email it to us and we reply within one working day.</div><div class="copyrow"><code id="addr">'+TO+'</code><button class="abtn ghost" type="button" id="cpA">Copy address</button><button class="abtn" type="button" id="cpM">Copy my request</button><a class="abtn hot" style="text-decoration:none" href="mailto:'+TO+'?subject='+encodeURIComponent('Davai · '+kind+' · '+company)+'&body='+encodeURIComponent(text)+'">Open email app</a></div>';
+    msg.innerHTML='<div><b>Thanks, '+esc(name)+'.</b> Your email app should open with your request written. If it did not, copy it below.</div><div class="copyrow"><code id="addr">'+TO+'</code><button class="abtn ghost" type="button" id="cpA">Copy address</button><button class="abtn" type="button" id="cpM">Copy my request</button><a class="abtn hot" style="text-decoration:none" href="mailto:'+TO+'?subject='+encodeURIComponent('Davai · '+kind+' · '+company)+'&body='+encodeURIComponent(text)+'">Open email app</a></div>';
+    try{location.href=$('#formMsg a.abtn.hot').href}catch(e){}
     $('#cpA').addEventListener('click',function(){copy(TO,this,$('#addr'))});
     $('#cpM').addEventListener('click',function(){copy(text,this,null)});
   });
+})();
+
+/* ---------- Call Camp tour: one stop lights up at a time ---------- */
+(function(){
+  var wrap=$('#ccWrap'),keys=$$('#ccKeys .cc-key');if(!wrap)return;
+  var stops=$$('.cc-stop',wrap),i=0,T=0,auto=!RM;
+  function show(n){i=n;wrap.classList.add('tour');
+    stops.forEach(function(s){s.classList.toggle('on',+s.getAttribute('data-stop')===n)});
+    keys.forEach(function(k){k.classList.toggle('on',+k.getAttribute('data-stop')===n)})}
+  function off(){wrap.classList.remove('tour');stops.concat(keys).forEach(function(s){s.classList.remove('on')})}
+  keys.forEach(function(k){
+    k.addEventListener('click',function(){auto=false;clearInterval(T);show(+k.getAttribute('data-stop'))});
+    k.addEventListener('pointerenter',function(e){if(e.pointerType!=='mouse')return;auto=false;clearInterval(T);show(+k.getAttribute('data-stop'))});
+  });
+  onView(wrap,function(v){clearInterval(T);if(!v){if(auto)off();return}if(!auto)return;show(1);T=setInterval(function(){show(i%5+1)},2600)},0.35);
+})();
+
+/* ---------- Events: a new lead lands in the event's Call Camp ---------- */
+(function(){
+  var lead=$('#evLead'),n=$('#evN');if(!lead||RM)return;var T=0,c=12;
+  function beat(){lead.classList.remove('new');void lead.offsetWidth;lead.classList.add('new');c=c>=14?11:c+1;n.textContent=c+' people'}
+  onView(lead,function(v){clearInterval(T);if(v)T=setInterval(beat,3200)},0.5);
 })();
 })();
 </script>
