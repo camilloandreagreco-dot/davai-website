@@ -1420,7 +1420,7 @@ footer .logo b{font-size:1.1rem}
 .wont{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:clamp(56px,7vw,88px)}
 .wont div{border:1.5px solid var(--ink);border-radius:16px;padding:16px 18px;background:var(--white);display:grid;gap:6px;align-content:start}
 .wont b{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;display:flex;gap:8px;align-items:center}
-.wont b svg{width:16px;height:16px;color:var(--bad);flex:none}
+.wont b svg{width:16px;height:16px;color:var(--ink);flex:none}
 .wont small{color:var(--mute);font-size:.88rem;line-height:1.45}
 @media (max-width:1000px){.wont{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.wont{grid-template-columns:minmax(0,1fr)}}
@@ -1541,7 +1541,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
 .ev-ask{border-radius:18px}
 .ev-lead small{white-space:normal;flex-wrap:wrap;line-height:1.3}
 .cc-act small{white-space:normal}
-.wont b svg{color:var(--hot)}
+.wont b svg{color:var(--ink)}
 .founder cite{text-transform:none;letter-spacing:.02em;font-size:.74rem}
 .lg-pills{display:none}
 .story-ph{margin:22px 0 0;max-width:300px;border-radius:16px;overflow:hidden;transform:rotate(1.2deg);box-shadow:0 18px 40px -24px rgba(0,0,0,.7)}
@@ -1554,6 +1554,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
 .roi-in .calc{margin-top:clamp(24px,3vw,36px)}
 .calc-l{gap:14px}
 .one-tr span:not(.up):not(.dn){background:var(--bg2);color:var(--ink2);white-space:normal}
+@media (min-width:1000px){.ask-strip{grid-template-columns:minmax(0,.62fr) minmax(0,1.9fr);gap:28px}.as-flow{flex-wrap:nowrap;gap:8px;font-size:.8rem;justify-content:flex-end}.as-say,.as-done{padding:8px 12px;white-space:nowrap}.as-plan{white-space:nowrap;padding:6px 7px 6px 12px}.as-plan em{padding:3px 10px}}
 </style>
 </head>
 <body>
@@ -1622,7 +1623,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
     </div>
 
     <div class="say-wrap">
-      <p class="sr">An example call with Davai. You call Giulia R., Head of Sales at a Milan software company, with one click. You say: so Tuesday at three works for you? Then: perfect, I'll email you the Milan case study. When you hang up, Davai has everything ready: a calendar invite for Tuesday at 15:00, and a follow-up email written in Italian with a link to the case study. The call is logged automatically. You say "make it shorter", then press play and the invite and the email open ready to send.</p>
+      <p class="sr">An example call with Davai. You call Giulia R., Head of Sales at a Milan software company, with one click. You say: so Tuesday at three works for you? Then: perfect, I'll email you the Milan case study. When you hang up, Davai has everything ready: a calendar invite for Tuesday at 15:00, and a follow-up email with a link to the case study. The call is logged automatically. You say "make it shorter", then press play and the invite and the email open ready to send.</p>
       <div class="say" id="say" aria-hidden="true">
         <div class="say-call">
           <span class="say-av" id="sayAv">GR</span>
@@ -1646,9 +1647,9 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
             </div>
             <div class="act act-mail" data-k="mail">
               <span class="act-ic"><svg><use href="#i-mail"/></svg></span>
-              <span class="act-t"><b>Follow-up email</b><small><em class="lang">IT</em>Written in her language</small></span>
+              <span class="act-t"><b>Follow-up email</b><small>Written from your call</small></span>
               <span class="act-go"><svg><use href="#i-play"/></svg></span>
-              <p class="act-prev" id="sayPrev">Ciao Giulia, a martedì alle 15:00. Qui sotto il case study di Milano.</p>
+              <p class="act-prev" id="sayPrev">Hi Giulia, see you Tuesday at 15:00. Milan case study below.</p>
               <span class="act-att on" id="sayAtt"><svg><use href="#i-clip"/></svg>Case study · Milan</span>
             </div>
           </div>
@@ -1907,7 +1908,7 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
                     <div class="dv on" data-k="3"><svg><use href="#i-check"/></svg><span>Queue built, mobile found with Lusha</span></div>
                     <div class="dv on" data-k="5"><svg><use href="#i-check"/></svg><span>Brief read for you, one click dialled</span></div>
                     <div class="dv on" data-k="7"><svg><use href="#i-check"/></svg><span>Notes from your voice, call logged</span></div>
-                    <div class="dv on wait" data-k="10"><svg><use href="#i-check"/></svg><span>Invite for Tue 15:00, follow-up in Italian, case study linked</span><em>Your OK</em></div>
+                    <div class="dv on wait" data-k="10"><svg><use href="#i-check"/></svg><span>Invite for Tue 15:00, follow-up written, case study linked</span><em>Your OK</em></div>
                     <div class="dv on" data-k="12"><svg><use href="#i-check"/></svg><span>Next step in your tasks, manager's dashboard live</span></div>
                     <div class="dv on cbk" data-k="13"><svg><use href="#i-check"/></svg><span>Callback · Sofia R. · Thu 09:00</span><em>From your sticky note</em></div>
                   </div>
@@ -1991,15 +1992,15 @@ a.pb:hover{border-color:var(--hot);transform:translateY(-2px)}
         <div class="bt-vis">
           <div class="b3">
             <div class="b3-mail" id="b3Mail">
-              <div class="b3-h"><span class="act-ic"><svg><use href="#i-mail"/></svg></span><b>Follow-up email</b><em class="lang" id="b3Lang">IT</em></div>
-              <p class="b3-body" id="b3Body">Ciao Giulia, a martedì alle 15:00. Qui sotto il case study. A presto, Alex</p>
+              <div class="b3-h"><span class="act-ic"><svg><use href="#i-mail"/></svg></span><b>Follow-up email</b><em class="lang" id="b3Lang">EN</em></div>
+              <p class="b3-body" id="b3Body">Hi Giulia, see you Tuesday at 15:00. Case study below. Best, Alex</p>
               <div class="b3-ctl" id="b3Ctl">
                 <span class="b3-b play" data-c="play"><svg><use href="#i-play"/></svg><span>Play</span></span>
                 <span class="b3-b" data-c="say"><svg><use href="#i-mic"/></svg><span>Say it</span></span>
                 <span class="b3-b" data-c="edit"><svg><use href="#i-edit"/></svg><span>Edit</span></span>
               </div>
             </div>
-            <span class="b3-bub" id="b3Bub"><svg><use href="#i-mic"/></svg>“Shorter, in Italian”</span>
+            <span class="b3-bub" id="b3Bub"><svg><use href="#i-mic"/></svg>“Make it shorter”</span>
           </div>
           <span class="b-cur" id="b3Cur"><svg viewBox="0 0 24 24"><path d="M4.5 2.5l15 8.6-6.6 1.7-3.4 6.2z"/></svg></span>
         </div>
@@ -2623,8 +2624,8 @@ function Cursor(cur,box){
   acts.mail.setAttribute('data-ph','Written when you hang up');
   var S=Scene(say,0.2),cur=Cursor($('#sayCur'),say),paused=false,talking=false,first=true;
   var L1='So [Tuesday at three|inv] works for you?',L2="Perfect. I'll [email you|mail] the [Milan case study.|doc]";
-  var LONG="Ciao Giulia, grazie per la chiamata. Ti ho mandato l'invito per martedì alle 15:00 e qui sotto trovi il case study di Milano.";
-  var SHORT='Ciao Giulia, a martedì alle 15:00. Qui sotto il case study di Milano.';
+  var LONG="Hi Giulia, thanks for the call. I've sent the invite for Tuesday at 15:00, and the Milan case study is linked below.";
+  var SHORT='Hi Giulia, see you Tuesday at 15:00. Milan case study below.';
   var CHIP={inv:'Tue 15:00',mail:'Follow-up',doc:'Case study'};
   function setSt(t,c){st.textContent=t;st.className='say-st'+(c?' '+c:'')}
   function stepTo(n){steps.forEach(function(li,i){li.className=i<n?'done':i===n?'on':''})}
@@ -2830,7 +2831,7 @@ function Cursor(cur,box){
   }
   /* 3: press play */
   var b3Mail=$('#b3Mail'),b3Body=$('#b3Body'),b3Lang=$('#b3Lang'),b3Bub=$('#b3Bub'),bPlay=$('.b3-b[data-c="play"]',bw),bSay=$('.b3-b[data-c="say"]',bw),bEdit=$('.b3-b[data-c="edit"]',bw);
-  var EN='Hi Giulia, thanks for your time today. The invite for Tuesday at 15:00 is in your inbox, and the case study is below.',IT='Ciao Giulia, a martedì alle 15:00. Qui sotto il case study.',SIGN=' A presto, Alex';
+  var EN='Hi Giulia, thanks for your time today. The invite for Tuesday at 15:00 is in your inbox, and the case study is below.',IT='Hi Giulia, see you Tuesday at 15:00. Case study below.',SIGN=' Best, Alex';
   function playLbl(t,icon){$('span',bPlay).textContent=t;$('use',bPlay).setAttribute('href','#'+icon)}
   async function beat3(S,cur,box){
     b3Mail.classList.remove('sent');b3Body.textContent=EN;b3Body.className='b3-body';b3Lang.textContent='EN';b3Bub.classList.remove('on');
@@ -2838,7 +2839,7 @@ function Cursor(cur,box){
     await S.hold(600);
     cur.show(box.clientWidth*.5,box.clientHeight-8);await S.hold(80);
     cur.to(bSay);await S.hold(800);await cur.tap(S,bSay);bSay.classList.add('on');b3Bub.classList.add('on');await S.hold(1000);
-    b3Body.classList.add('swap');await S.hold(260);b3Body.textContent=IT;b3Lang.textContent='IT';b3Body.classList.remove('swap');bSay.classList.remove('on');await S.hold(800);
+    b3Body.classList.add('swap');await S.hold(260);b3Body.textContent=IT;b3Body.classList.remove('swap');bSay.classList.remove('on');await S.hold(800);
     cur.to(bEdit);await S.hold(750);await cur.tap(S,bEdit);bEdit.classList.add('on');b3Body.classList.add('edit');b3Bub.classList.remove('on');
     var car=document.createElement('span');car.className='caret';b3Body.appendChild(car);
     var tn=document.createTextNode('');b3Body.insertBefore(tn,car);
@@ -3071,7 +3072,7 @@ function Cursor(cur,box){
       el.innerHTML='<div class="ga-row"><span class="act-ic">'+ic('i-mail')+'</span><span class="t"><b>Follow-up email</b><small><em class="lang">EN</em>To '+esc(G.p.n)+'</small></span><button class="gplay" type="button" aria-label="Send the email">'+ic('i-play')+'</button></div>'+
         '<div class="gm-body"></div><span class="gm-att">'+ic('i-clip')+esc(d.att)+'</span>'+
         '<div class="gctl"><button class="gbtn" type="button" data-c="say" aria-pressed="false">'+ic('i-mic')+'Say it</button><button class="gbtn" type="button" data-c="edit" aria-pressed="false">'+ic('i-edit')+'Edit</button></div>'+
-        '<div class="gvoice" hidden><button class="vc" type="button" data-v="short">“Make it shorter”</button><button class="vc" type="button" data-v="it">“Write it in Italian”</button><button class="vc" type="button" data-v="fr">“Now in French”</button></div>'+
+        '<div class="gvoice" hidden><button class="vc" type="button" data-v="short">“Make it shorter”</button></div>'+
         '<p class="heard">Press play: it opens in your mail app, ready to send.</p>';
       var bd=$('.gm-body',el),lang=$('.lang',el),heard=$('.heard',el),gp=$('.gplay',el),bSay=$('[data-c="say"]',el),bEd=$('[data-c="edit"]',el),vo=$('.gvoice',el);
       var fill=function(anim){text=mail(d.kind,L,short,d.c).b;lang.textContent=L.toUpperCase();
